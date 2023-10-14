@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+  background-color: black;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+    color: rgb(102, 152, 233);
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+h4{
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(60, 231, 60);
+    font-size: medium;
+}
+.container {
+  width: 70%;
+  margin: 20px 250px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 20px; 
+}
+
+.g_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+}
+.elems{
+    border-radius: 4px;
+
+}
+
+.g_elem1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(https://i.pinimg.com/564x/47/1d/0e/471d0e4e692d269f95086f53499b61f2.jpg);
+  background-size: cover;
+}
+
+.g_elem2 {
+
+  grid-column: 3 / span 2;  
+  grid-row: 1 / span 2; 
+  background-image: url(https://i.pinimg.com/564x/6c/43/a4/6c43a436e248318cfa7c39fcd0726230.jpg);
+  background-position: center;
+}
+
+.g_elem3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-image: url(https://i.pinimg.com/564x/82/68/40/826840cac5f2522ad0fcd8fc72ac8e44.jpg);
+  background-position: center;
+}
+
+.g_elem4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-image: url(https://i.pinimg.com/564x/30/27/c5/3027c5833cf1e5b8709c57be87fc1194.jpg);
+  background-position: center;
+
+
+}
+
+.g_elem5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background-image: url(https://i.pinimg.com/564x/bc/86/c5/bc86c5515db938ec22ca5ec8572fe488.jpg);
+  background-position: center;
+
+}
+
+.g_elem6 {
+ grid-column: 5 / span 4;
+ grid-row: 6 / span 3; 
+ background-image: url(https://i.pinimg.com/736x/63/b1/34/63b134343bb88f362d5867bac195b863.jpg);
+ background-position:center;
+
+}
